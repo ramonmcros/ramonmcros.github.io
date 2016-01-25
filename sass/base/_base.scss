@@ -1,0 +1,67 @@
+// ==============================================================
+//   _base.scss *****
+// ==============================================================
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: $font-size-regular;
+  line-height: 1.6;
+  font-family: $font-family-serif;
+  background: $color-background;
+  color: $color-text;
+}
+
+// TEXT
+// ==============================================================
+
+p {
+  color: $color-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: $font-size-xxx-large;
+}
+
+h2 {
+  font-size: $font-size-xx-large;
+}
+
+h3 {
+  font-size: $font-size-x-large;
+}
+
+h4 {
+  font-size: $font-size-large;
+}
+
+h5 {
+  font-size: $font-size-regular;
+}
+
+h6 {
+  font-size: $font-size-small;
+}
+
+// LINKS
+// ==============================================================
+
+a {
+  color: $color-link;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color-link-hover;
+}
