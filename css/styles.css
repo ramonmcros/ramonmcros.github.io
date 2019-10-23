@@ -1,0 +1,139 @@
+:root {
+    --purple: #4a0160;
+    --green: #9DE7D7;
+    --blue: #89ABE3;
+    --white: #fbfcf7;
+    --lora-font: 'Lora', Georgia, serif;
+    --open-sans-font: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--lora-font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--white);
+    background-image: linear-gradient(to bottom, var(--green), var(--blue));
+}
+
+.l-site-wrapper {
+    padding: 40px 10px 100px;
+}
+
+.o-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    font-family: var(--open-sans-font);
+}
+
+.o-header__logo {
+    border: solid 4px var(--white);
+    margin-bottom: 40px;
+    padding: 10px 22px;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--white);
+    box-shadow: 10px 10px 0 0 var(--white);
+    transition: all 0.5s;
+}
+
+.o-header__logo:hover {
+    box-shadow: 0 0 0 0 var(--purple);
+    color: var(--purple);
+    border-color: var(--purple);
+}
+
+.o-header__info-link {
+    font-size: 22px;
+    color: var(--white);
+}
+
+.o-header__info-link:hover {
+    color: var(--purple);
+}
+
+.m-display {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.m-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: var(--open-sans-font);
+    list-style: none;
+}
+
+.m-list__item:not(:last-child) {
+    margin-bottom: 22px;
+}
+
+.m-list__anchor {
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: var(--white)
+}
+
+.m-list__anchor:hover {
+    color: var(--purple);
+}
+
+.m-list__small-text {
+    display: inline-block;
+    font-size: 18px;
+}
+
+@media (min-width: 700px) {
+    .l-site-wrapper {
+        padding: 80px 50px 150px;
+    }
+
+    .o-header {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    .o-header__logo {
+        margin-bottom: 0;
+    }
+
+    .m-list__anchor {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .m-list__small-text {
+        margin-left: 10px;
+    }
+}
